@@ -23,11 +23,18 @@ MyCounter >> counter: aCounter [
 { #category : 'accessing' }
 MyCounter >> decrement [ 
 
-	counter -1 
+	counter := counter -1 
 ]
 
 { #category : 'accessing' }
 MyCounter >> increment [
 
-	counter + 1 
+	counter := counter -1 
+]
+
+{ #category : 'initialization' }
+MyCounter >> initialize [ 
+
+	super initialize.
+	counter:=0.
 ]
